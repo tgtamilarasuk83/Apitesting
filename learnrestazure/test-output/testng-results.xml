@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="6" total="7" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-06-15T15:38:54 IST" name="Default suite" finished-at="2026-06-15T15:38:56 IST" duration-ms="1535">
+  <suite started-at="2026-06-18T07:40:28 IST" name="Default suite" finished-at="2026-06-18T07:40:32 IST" duration-ms="4188">
     <groups>
     </groups>
-    <test started-at="2026-06-15T15:38:54 IST" name="Default test" finished-at="2026-06-15T15:38:56 IST" duration-ms="1535">
-      <class name="Testapi.CreateuserTest">
-        <test-method signature="createUserTes1t()[pri:0, instance:Testapi.CreateuserTest@31ea9581]" started-at="2026-06-15T15:38:54 IST" name="createUserTes1t" finished-at="2026-06-15T15:38:56 IST" duration-ms="1468" status="PASS">
+    <test started-at="2026-06-18T07:40:28 IST" name="Default test" finished-at="2026-06-18T07:40:32 IST" duration-ms="4188">
+      <class name="LMSServer.Testing_LMSServer">
+        <test-method is-config="true" signature="setup()[pri:0, instance:LMSServer.Testing_LMSServer@69504ae9]" started-at="2026-06-18T07:40:28 IST" name="setup" finished-at="2026-06-18T07:40:28 IST" duration-ms="19" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createUserTes1t -->
-      </class> <!-- Testapi.CreateuserTest -->
+        </test-method> <!-- setup -->
+        <test-method signature="Getallnotes()[pri:7, instance:LMSServer.Testing_LMSServer@69504ae9]" started-at="2026-06-18T07:40:28 IST" name="Getallnotes" finished-at="2026-06-18T07:40:32 IST" duration-ms="4054" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Getallnotes -->
+      </class> <!-- LMSServer.Testing_LMSServer -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

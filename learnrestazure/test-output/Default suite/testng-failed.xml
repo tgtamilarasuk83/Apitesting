@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Testapi.getUserTests">
+      <class name="LMSServer.Testing_LMSServer">
         <methods>
-          <include name="getUsers"/>
+          <include name="Getallnotes"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- Testapi.getUserTests -->
+      </class> <!-- LMSServer.Testing_LMSServer -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

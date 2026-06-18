@@ -3,7 +3,7 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="Testapi.CreateuserTest"/>
+      <class name="RestAzure.GetUsers"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
