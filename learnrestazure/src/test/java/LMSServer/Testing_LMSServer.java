@@ -177,12 +177,12 @@ public class Testing_LMSServer {
     	}
     	
     	@Test(priority = 7)
-    	void Getallnotes() {
+    	void Getallnotes() { 
 //    		A query parameter is extra information you add to a URL to filter, search, or control data.
     		Response response = given()
     		        .header("Authorization", "Bearer " + reader.getToken())
     		        .pathParam("PATH1","getAll")
-    		        .pathParam("PATH2","notes")
+    		        .pathParam("PATH2","notes")  // using path params
     		        .accept("application/json")
     		        .queryParam("page", 1)
     		        .queryParam("limit", 50)
