@@ -3,12 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="LMSServer.Testing_LMSServer">
+      <class name="com.test.Calculator">
         <methods>
+          <include name="clearFunctionality"/>
           <include name="setup"/>
-          <include name="healthcheck"/>
+          <include name="resetApp"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- LMSServer.Testing_LMSServer -->
+      </class> <!-- com.test.Calculator -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,6 +1,7 @@
 package LMSServer;
 
 import org.testng.annotations.BeforeClass;
+import static io.restassured.RestAssured.given;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
@@ -8,6 +9,7 @@ import org.testng.annotations.Test;
 import com.aventstack.extentreports.gherkin.model.Then;
 
 import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
 
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
@@ -29,18 +31,28 @@ public class Testing_LMSServer {
 	    reader = new Propertyfilereader();
 	}
 	
+	
+	
 	@Test(priority = 1)
 	public void healthcheck() {
-		when()
-			.get(EnvironmentSetup.baseurl)
-		.then()
-              .statusCode(200);		
+
+	   Response res =  given()
+	    .when()
+	        .get(EnvironmentSetup.baseurl);
+	    res.then()
+	        .log().headers()
+	        .statusCode(200)
+	        .header("access-control-allow-credentials", "true")
+	        .header("content-type", "text/html; charset=utf-8");   
+	    System.out.println(res.header("content-length"));
 	}
 	
 	
 	
-	
-    @Test(priority = 2)
+
+
+
+	@Test(priority = 2)
     public void test_Login() throws IOException {
     	
 
@@ -84,6 +96,10 @@ public class Testing_LMSServer {
     	
     	
     }
+    
+    
+
+   
     
     
     @Test(priority = 3)
@@ -182,7 +198,7 @@ public class Testing_LMSServer {
     		Response response = given()
     		        .header("Authorization", "Bearer " + reader.getToken())
     		        .pathParam("PATH1","getAll")
-    		        .pathParam("PATH2","notes")  // using path params
+    		        .pathParam("PATH2","notes")  // using path params	
     		        .accept("application/json")
     		        .queryParam("page", 1)
     		        .queryParam("limit", 50)

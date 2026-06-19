@@ -1,45 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+<testng-results ignored="6" total="7" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-06-18T08:01:22 IST" name="Suite" finished-at="2026-06-18T08:01:37 IST" duration-ms="15111">
+  <suite started-at="2026-06-18T16:47:26 IST" name="Default suite" finished-at="2026-06-18T16:47:27 IST" duration-ms="1569">
     <groups>
     </groups>
-    <test started-at="2026-06-18T08:01:22 IST" name="Test" finished-at="2026-06-18T08:01:37 IST" duration-ms="15111">
+    <test started-at="2026-06-18T16:47:26 IST" name="Default test" finished-at="2026-06-18T16:47:27 IST" duration-ms="1569">
       <class name="LMSServer.Testing_LMSServer">
-        <test-method is-config="true" signature="setup()[pri:0, instance:LMSServer.Testing_LMSServer@2657d4dd]" started-at="2026-06-18T08:01:22 IST" name="setup" finished-at="2026-06-18T08:01:22 IST" duration-ms="17" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:LMSServer.Testing_LMSServer@69504ae9]" started-at="2026-06-18T16:47:26 IST" name="setup" finished-at="2026-06-18T16:47:26 IST" duration-ms="10" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="healthcheck()[pri:1, instance:LMSServer.Testing_LMSServer@2657d4dd]" started-at="2026-06-18T08:01:22 IST" name="healthcheck" finished-at="2026-06-18T08:01:25 IST" duration-ms="2302" status="PASS">
+        <test-method signature="healthcheck()[pri:1, instance:LMSServer.Testing_LMSServer@69504ae9]" started-at="2026-06-18T16:47:26 IST" name="healthcheck" finished-at="2026-06-18T16:47:27 IST" duration-ms="1494" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- healthcheck -->
-        <test-method signature="test_Login()[pri:2, instance:LMSServer.Testing_LMSServer@2657d4dd]" started-at="2026-06-18T08:01:25 IST" name="test_Login" finished-at="2026-06-18T08:01:30 IST" duration-ms="4819" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_Login -->
-        <test-method signature="Getallinstitutions()[pri:3, instance:LMSServer.Testing_LMSServer@2657d4dd]" started-at="2026-06-18T08:01:30 IST" name="Getallinstitutions" finished-at="2026-06-18T08:01:31 IST" duration-ms="1313" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Getallinstitutions -->
-        <test-method signature="Getallroles()[pri:4, instance:LMSServer.Testing_LMSServer@2657d4dd]" started-at="2026-06-18T08:01:31 IST" name="Getallroles" finished-at="2026-06-18T08:01:32 IST" duration-ms="1489" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Getallroles -->
-        <test-method signature="Getallcoursestructures()[pri:5, instance:LMSServer.Testing_LMSServer@2657d4dd]" started-at="2026-06-18T08:01:32 IST" name="Getallcoursestructures" finished-at="2026-06-18T08:01:34 IST" duration-ms="2093" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Getallcoursestructures -->
-        <test-method signature="Createnote()[pri:6, instance:LMSServer.Testing_LMSServer@2657d4dd]" started-at="2026-06-18T08:01:34 IST" name="Createnote" finished-at="2026-06-18T08:01:36 IST" duration-ms="1576" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Createnote -->
-        <test-method signature="Getallnotes()[pri:7, instance:LMSServer.Testing_LMSServer@2657d4dd]" started-at="2026-06-18T08:01:36 IST" name="Getallnotes" finished-at="2026-06-18T08:01:37 IST" duration-ms="1348" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Getallnotes -->
       </class> <!-- LMSServer.Testing_LMSServer -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

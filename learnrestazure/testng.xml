@@ -4,6 +4,7 @@
   <test thread-count="5" name="Test">
     <classes>
       <class name="LMSServer.Testing_LMSServer"/>
+       <class name="LMSServer.Invalid_TestforLMS"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -5,8 +5,8 @@
     <classes>
       <class name="LMSServer.Testing_LMSServer">
         <methods>
-          <include name="Getallnotes"/>
           <include name="setup"/>
+          <include name="healthcheck"/>
         </methods>
       </class> <!-- LMSServer.Testing_LMSServer -->
     </classes>
